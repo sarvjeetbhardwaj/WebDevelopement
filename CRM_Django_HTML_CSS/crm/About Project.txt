@@ -1,0 +1,9 @@
+This project will use MySql for database.
+MySQL installation is neccesay for project to run.
+
+One can reregister, LogIn, LogOut, Add Records, View Records, Update Records and Delete Records
+
+Copy all the contents into a folder.
+Modify the credentials of MySql database in crm/settings.py file and mydb.py file 
+Execute mydb.py to create a database.This is a one time setting.
+Execute python manage.py runserver to launch the project.

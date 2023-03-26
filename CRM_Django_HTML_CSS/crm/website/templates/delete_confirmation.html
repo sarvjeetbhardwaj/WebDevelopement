@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+
+<h1>Are you sure you want to delete this entry ??</h1>
+<br>
+
+<div class="card" style="width: 18rem;">
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>Name : </strong><class="card-title">{{ record.first_name }} {{ record.last_name }}</h5></li>
+      <li class="list-group-item"><strong>City : </strong><class="card-title">{{ record.city }}</h5></li>
+      <li class="list-group-item"><strong>State : </strong><class="card-title">{{ record.state }}</h5></li>
+      <li class="list-group-item"><strong>Address : </strong><class="card-title">{{ record.address }}</h5></li>
+      <li class="list-group-item"><strong>Email : </strong><class="card-title">{{ record.email }}</h5></li>
+      <li class="list-group-item"><strong>Phone : </strong><class="card-title">{{ record.phone }}</h5></li>
+      <li class="list-group-item"><strong>Id : </strong><class="card-title">{{ record.id }}</h5></li>
+    </ul>
+</div>
+<br>
+
+<a href='{% url "delete_record" record.id %}'><button type="button" class="btn btn-danger">Yes</button></a>
+<a href='{% url "record" record.id %}'><button type="button" class="btn btn-secondary">No</button></a>
+<a href='{% url "home" %}'><button type="button" class="btn btn-info">Go back to the Home Page</button></a>
+
+{% endblock %}

@@ -1,0 +1,3 @@
+A very simple real estate website that lets you add/modify/delete the listings.
+
+Cppy all the contents into a folder and execute python manage.py runserver

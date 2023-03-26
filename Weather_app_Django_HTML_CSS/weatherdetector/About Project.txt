@@ -1,0 +1,3 @@
+A very simple weather application to know the weather of a paticular area.
+
+Copy all the contents into a folder and execute python manage.py runserver
