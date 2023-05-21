@@ -1,0 +1,9 @@
+<h1>Create a new task</h1>
+<a href="/">Go back</a>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ createtask.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
