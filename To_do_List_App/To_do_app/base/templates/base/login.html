@@ -1,0 +1,14 @@
+<h1>This is login page</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+
+
+    <p><input type="email" name="email" placeholder="Email" ></p>
+    <p><input type="password" name="password" placeholder="Password" ></p>
+
+    <button type="submit" >Login</button>
+    <div class="text-center mt-5 space-x-2">
+        <p class="text-base"> Click to create an account here ? <a href="/signup"> Sign up here </a></p>
+    </div>
+</form>
