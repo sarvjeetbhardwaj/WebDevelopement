@@ -1,9 +1,0 @@
-<h1>Update the task :: {{ task.title }}</h1>
-<a href="/">Go back</a>
-
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ updateform.as_p }}
-    <button type="submit">Submit</button>
-</form>
-
